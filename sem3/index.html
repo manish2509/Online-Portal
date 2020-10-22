@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+  #s
+  {
+	  border:2px solid black;
+	  color:black;
+  }
+  #d
+  {
+	   border:2px solid black;
+	   color:black;
+  }
+  .container-fluid{
+	  background-image:url("index.jpg");
+	   background-position: center;
+	background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  }
+ input[type=text]{
+	 border:2px solid black;
+	 color:black;
+ }
+ input[type=submit]{
+	 border-radius:16px;
+	 border:2px solid red;
+	 color:black;
+	 text-align:center;
+ }
+ header{
+text-align:center;
+padding-top:1px;
+  padding-left: 20px;
+  min-height:50px;
+  border-bottom:red 2px solid;
+ }
+  </style>
+  <body>
+  <header>
+  <div class="container">
+  <center>
+  <h1>VELAMMAL ENGINEERING COLLEGE</h1>
+  <h4>ONLINE STUDY MATERIAL PORTAL</h4>
+  </center>
+  <div class="col-sm-11"></div><div class="col-sm-1"><a href="upload.html">UPLOAD</a></div>
+  </div>
+  </header>
+   <div class="container-fluid">
+  <form class="form-horizontal" action="view.php" method="post">
+  <div class="form-group">
+  <div class="col-sm-12"></div></div>
+  <div class="form-group">
+  <label class="control-label col-sm-4">DEPARTMENT:</label>
+ <div class="col-sm-4">
+  <select class="form-control" name="dept" id="d">
+  <option value="s">SELECT THE DEPARTMENT</option>
+  <option value="auto">AUTOMOBILE ENGINEERNG</option>
+  <option value="cse">COMPUTER SCIENCE ENGINEERNG</option>
+  <option value="ece">ELECTRICAL AND COMMUNCATION ENGINEERNG</option>
+  <option value="eee">ELECTRICAL AND ELECTRONICS ENGINEERNG</option>
+  <option value="eie">ELECTRICAL AND INSTRUMENTAL ENGINEERNG</option>
+  <option value="it">INFORMATION TECHNOLOGY</option>
+  <option value="mech">MECHANICAL ENGINEERNG</option>
+  <option value="mba">MASTERS OF BUSINESS ADMINISTRATION</option>
+  </select>
+  </div>
+  <div class="col-sm-4"></div>
+  </div>
+  <div class="form-group">
+  <label class="control-label col-sm-4">SEMESTER:</label>
+ <div class="col-sm-4">
+  <select class="form-control" name="sem" id="s">
+  <option value="s">SELECT THE SEMESTER</option>
+  <option value="1">I</option>
+  <option value="2">II</option>
+  <option value="3">III</option>
+  <option value="4">IV</option>
+  <option value="5">V</option>
+  <option value="6">VI</option>
+  <option value="7">VII</option>
+  <option value="8">VIII</option>
+  </select>
+  </div>
+  <div class="col-sm-4"></div>
+  </div>
+  <div class="form-group">
+  <label class="control-label col-sm-4">SUBJECT:</label>
+  <div class="col-sm-4"><input type="text" name="sub" class="form-control" placeholder="Enter the subject(abbreviated form)" >
+  </div><div class="col-sm-4"></div></div>
+  <div class="form-group">
+  <div class="col-sm-4"></div><div class="col-sm-4"><input type="submit" class="form-control" value="VIEW"></div> <div class="col-sm-4"></div>
+  </form>
+  </div>
+  </body>
+  </html>
